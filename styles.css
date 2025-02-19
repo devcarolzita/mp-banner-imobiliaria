@@ -1,0 +1,146 @@
+:root {
+  ---background: #F2FFF6;
+  --highlighter: #55B685;
+  --text-color: #000000;
+  --secondary-background: #FFFFFF;
+  --secondary-text-color: #6C727F;
+  --background-border: rgba(108, 114, 127, 0.12);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(---background);
+  font-family: "Inter", serif;
+}
+
+.container {
+  padding: 60px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 7%;
+  color: var(--highlighter);
+  font-weight: 600;
+}
+
+.contact-title {
+  color: var(--highlighter);
+  text-decoration: none;
+}
+.banner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.textsBanner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 25px;
+  width: 40%;
+}
+
+.textsBanner-tag {
+  background-color: var(--highlighter);
+  width: fit-content;
+  padding: 5px;
+  border-radius: 20px;
+  color: #FFFFFF;
+  font-weight: 600;
+}
+
+.textsBanner-title {
+  font-size: 3.8rem;
+}
+
+.textsBanner-description {
+  font-size: 1.3rem;
+  color: var(--secondary-text-color)
+}
+
+.textsBanner-tags {
+  display: flex;
+  justify-content: space-between;
+}
+
+.textsBanner-tags-box {
+  background-color: var(--secondary-background);
+  border: 1px solid var(--background-border);
+  width: fit-content;
+  padding: 5px 15px;
+  border-radius: 20px;
+  color: var(--secondary-text-color);
+}
+
+.imgBanner {
+  width: 50%;
+  border-radius: 20px;
+}
+
+.results {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+.results-box-number {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--highlighter);
+  text-align: center;
+}
+
+.results-box-title {
+  color: var(--secondary-text-color);
+  font-size: 1.4rem;
+}
+
+@media screen and (max-width: 900px){
+  .container {
+    padding: 30px;
+  }
+  .contact {
+    width: fit-content;
+  }
+  .banner {
+    flex-direction: column;
+  }
+  .textsBanner {
+    width: 100%;
+  }
+  .textsBanner-title {
+    font-size: 3rem;
+  }
+  .textsBanner-tags {
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: unset;
+    margin-bottom: 40px;
+  }
+  .textsBanner-tag {
+    padding: 5px 10px;
+  }
+  .imgBanner {
+    width: 100%;
+  }
+  .results {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+}
